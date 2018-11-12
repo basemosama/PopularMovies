@@ -78,7 +78,6 @@ public class DetailsActivity extends AppCompatActivity implements TrailerAdapter
        setUpUI(currentMovie);
 
 
-       Log.i("myMovie", String.valueOf(currentMovie.getDatabaseId()));
         movieDatabase=MovieDatabase.getInstance(getApplicationContext());
          trailersRecyclerView = (RecyclerView) findViewById(R.id.trailers_rv);
          reviewsRecyclerView=(RecyclerView) findViewById(R.id.reviews_rv);

@@ -189,14 +189,13 @@ public class MainActivity extends AppCompatActivity implements MoviesAdapter.Mov
         return super.onOptionsItemSelected(item);
     }
 
-
-
-
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putString(Constant.CATEGORY_NAME,getTitle().toString());
     }
+
+
     public void setUpViewModel( ){
 
         final MainViewModel mainViewModel=ViewModelProviders.of(this).get(MainViewModel.class);
