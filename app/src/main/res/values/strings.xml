@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="popular">Popular Movies</string>
+    <string name="topRated">Top Rated Movies</string>
+    <string name="original_title">Original Title :</string>
+    <string name="user_rating">User Rating :</string>
+    <string name="release_date">Release Date :</string>
+    <string name="plot">Plot :</string>
+    <string name="movie_poster">Movie Poster</string>
+
+    <string name="network_error_message">Sorry There is no internet Connection
+ Try again later</string>
+    <string name="network_error_message2">Sorry There is no internet Connection
+ Try again later to show Trailers and Reviews</string>
+    <string name="favourite">Favourite</string>
+    <string name="favourite_movies">Favourite Movies</string>
+    <string name="trailers">Trailers :</string>
+    <string name="reviews">Reviews :</string>
+    <string name="no_reviews">There isn\'t any reviews for this movie</string>
+    <string name="removed_from_favourites">&#160; removed from Favourites</string>
+    <string name="added_to_favourites">&#160; added to Favourites</string>
+
+
+</resources>

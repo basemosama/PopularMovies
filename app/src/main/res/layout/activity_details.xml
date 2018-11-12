@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity"
+
+    >
+
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:id="@+id/detailimage"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/movie_poster"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/original_title"
+        android:textSize="18sp"
+        android:id="@+id/title"
+        android:textColor="#00e5ff"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="15sp"
+        android:id="@+id/title1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/title"
+        android:layout_toLeftOf="@id/detailimage"
+        android:layout_toStartOf="@id/detailimage"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/user_rating"
+        android:textSize="18sp"
+        android:id="@+id/rating"
+        android:layout_below="@id/title1"
+        android:textColor="#00e5ff"
+        android:fontFamily="sans-serif-condensed"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:id="@+id/rating1"
+        android:layout_toRightOf="@id/rating"
+        android:layout_toEndOf="@id/rating"
+        android:layout_toLeftOf="@id/detailimage"
+        android:layout_toStartOf="@id/detailimage"
+        android:layout_below="@id/title1"
+        android:textColor="#fff"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/release_date"
+        android:textSize="18sp"
+        android:id="@+id/releasedate"
+        android:layout_below="@id/rating1"
+        android:textColor="#00e5ff"
+        android:fontFamily="sans-serif-condensed"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="15sp"
+        android:id="@+id/releasedate1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/detailimage"
+        android:layout_toStartOf="@id/detailimage"
+        android:layout_below="@id/releasedate"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/plot"
+        android:textSize="20sp"
+        android:id="@+id/plot"
+        android:layout_below="@id/detailimage"
+        android:textColor="#00e5ff"
+        android:fontFamily="sans-serif-condensed"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="15sp"
+        android:id="@+id/plot1"
+        android:layout_below="@id/plot"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#fff"
+
+        />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="15dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginStart="10dp"
+           android:text="@string/trailers"
+           android:textSize="25sp"
+           android:id="@+id/trailers"
+           android:layout_below="@id/plot1"
+           android:textColor="#00e5ff"
+           android:fontFamily="sans-serif-condensed"
+
+           />
+       <android.support.v7.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/trailers"
+           android:id="@+id/trailers_rv"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="15dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginStart="10dp"
+           android:text="@string/reviews"
+           android:textSize="25sp"
+           android:id="@+id/reviews"
+           android:layout_below="@id/trailers_rv"
+           android:textColor="#00e5ff"
+           android:fontFamily="sans-serif-condensed"
+
+           />
+       <android.support.v7.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/reviews"
+           android:id="@+id/reviews_rv"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/no_reviews"
+           android:layout_marginTop="15dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginStart="10dp"
+           android:layout_marginBottom="5dp"
+           android:textSize="20sp"
+           android:id="@+id/no_reviews"
+           android:layout_below="@id/reviews"
+           android:textColor="#fff"
+           android:fontFamily="sans-serif-condensed"
+           android:visibility="gone"
+           />
+
+
+
+    </RelativeLayout>
+ </ScrollView>
+
+</FrameLayout>
